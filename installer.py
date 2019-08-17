@@ -29,7 +29,7 @@ else:
 apksign=input("IS APKSIGNER ALREADY INSTALLED IN YOUR SYSTEM? [Y/n]? : ")
 if apksign=="n" or apksign=="N":
            print("INSTALLING APKSIGNER....")
-           os.system("sudo apt-get install apksigner > /dev/null")
+           os.system("sudo apt-get install apksigner -y > /dev/null")
 else: 
      print("NICE .....")
      
@@ -37,11 +37,11 @@ else:
 openssh=input("IS openssh INSTALLED IN YOUR SYSTEM? [Y/n] : ")
 if openssh=="n" or openssh=="N":
            print("Installing ssh")
-           os.system("sudo apt-get install openssh > /dev/null")
+           os.system("sudo apt-get install openssh -y > /dev/null")
 
 apache=input("IS APACHE2 SERVER IS INSTALLED IN YOUR SYSTEM? [Y/n] : ")
 if apache=="n" or apache=="N":
-          os.system("sudo apt-get install apache2 > /dev/null")
+          os.system("sudo apt-get install apache2 -y > /dev/null")
 else:
      print("HURRAY....")
 

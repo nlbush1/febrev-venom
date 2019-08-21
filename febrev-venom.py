@@ -17,7 +17,7 @@ print("""\033[1;35m
      
  """)
 print("\033[1;34m ======================================================programmed by FEBIN")
-print("\033[1;31m Do Not Use For malicious purposes
+print("\033[5;31m Do Not Use For malicious purposes.....I am not responsible ,for any crime done by you!!")
 print("""\033[0;39m
 **********************************************************************|
 [1]android/meterpreter/reverse_tcp                                    |

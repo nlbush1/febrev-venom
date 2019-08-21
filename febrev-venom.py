@@ -2,8 +2,8 @@ import os
 import webbrowser
 import socket
 import click
-os.system('echo -e "\033[1m \e[33m WELCOME TO FEBREV VENOM"')
-print("""
+print("\033[1m WELCOME TO FEBREV VENOM")
+print("""\033[5m
   ______ ______ ____  _____  ________      __ __      ________ _   _  ____  __  __ 
  |  ____|  ____|  _ \|  __ \|  ____\ \    / / \ \    / /  ____| \ | |/ __ \|  \/  |
  | |__  | |__  | |_) | |__) | |__   \ \  / /   \ \  / /| |__  |  \| | |  | | \  / |
@@ -16,9 +16,7 @@ print("""
                      =====>>> coded by FEBIN REV                                                                                             
      
  """)
-echo="echo -e"
-colour="\033[1m \e[32m programmed by FEBIN"
-os.system('echo -e "\033[1m \e[32m programmed by FEBIN"')
+print("\033[1m programmed by FEBIN")
 print("""
 **********************************************************************|
 [1]android/meterpreter/reverse_tcp                                    |

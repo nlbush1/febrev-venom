@@ -2,8 +2,8 @@ import os
 import webbrowser
 import socket
 import click
-print("\033[0;31m WELCOME TO FEBREV VENOM")
-print("""\033[0;36m
+print("\033[1;31m WELCOME TO FEBREV VENOM")
+print("""\033[1;35m
   ______ ______ ____  _____  ________      __ __      ________ _   _  ____  __  __ 
  |  ____|  ____|  _ \|  __ \|  ____\ \    / / \ \    / /  ____| \ | |/ __ \|  \/  |
  | |__  | |__  | |_) | |__) | |__   \ \  / /   \ \  / /| |__  |  \| | |  | | \  / |
@@ -16,8 +16,8 @@ print("""\033[0;36m
                      =====>>> coded by FEBIN REV                                                                                             
      
  """)
-print("\033[0;39m programmed by FEBIN")
-print("\033[0;31m Do Not Use For malicious purposes
+print("\033[1;34m ======================================================programmed by FEBIN")
+print("\033[1;31m Do Not Use For malicious purposes
 print("""\033[0;39m
 **********************************************************************|
 [1]android/meterpreter/reverse_tcp                                    |

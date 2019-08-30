@@ -19,6 +19,7 @@ print("""
 ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
                                                                       
 """)
+os.system("sudo apt-get install python3-pip")
 os.system("python3 -m pip install click")
 metasploit=input("IS METASPLOIT-FRAMEWORK ALREADY INSTALLED IN YOUR SYSTEM ? [Y/n] : ")
 if metasploit=="n" or metasploit=="N":

@@ -1,7 +1,9 @@
+#!/usr/bin/python3
 import os
 import webbrowser
 import socket
 import click
+os.system("chmod 777 ngrok")
 print("\033[1;31m WELCOME TO FEBREV VENOM")
 print("""\033[1;34m
   ______ ______ ____  _____  ________      __ __      ________ _   _  ____  __  __ 

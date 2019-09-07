@@ -4,6 +4,7 @@ import webbrowser
 import socket
 import click
 import zenipy
+os.system("chmod 777 ngrok")
 print("\033[1;31m WELCOME TO FEBREV VENOM")
 zenipy.zenipy.message(title="WEOLCOME TO FEBREV_VENOM", text="FEBRV-VENOM is an android exploitation tool developed by FEBIN")
 print("""\033[1;34m

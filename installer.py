@@ -21,8 +21,8 @@ print("""
 """)
 os.system("sudo apt-get install python3-pip")
 os.system("sudo apt-get install zenity")
-os.system("python3 -m pip install zenipy")
-os.system("python3 -m pip install click")
+os.system("sudo python3 -m pip install zenipy")
+os.system("sudo python3 -m pip install click")
 metasploit=input("IS METASPLOIT-FRAMEWORK ALREADY INSTALLED IN YOUR SYSTEM ? [Y/n] : ")
 if metasploit=="n" or metasploit=="N":
             print("Installing Metasploit.........")
@@ -52,8 +52,8 @@ else:
 path=os.getcwd()
 with open("febrev.sh","w+") as fr:
       fr.write(f"python3 {path}/febrev-venom.py")
-os.system(f"cp {path}/febrev.sh /bin/febrev")
-os.system("chmod +x /bin/febrev")
+os.system(f"sudo cp {path}/febrev.sh /bin/febrev")
+os.system("sudo chmod +x /bin/febrev")
 print("")
 print("NOW YOU CAN RUN FEBREV-VENOM FROM ANYWERE BY TYPING COMMAND  >>  febrev")
 exiting=input("ENTER ANY KEY TO CONTINUE.......!!!!! ")

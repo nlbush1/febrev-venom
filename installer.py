@@ -24,6 +24,12 @@ if zenity is True:
 else:
 	print("\033[1;31m ZENITY IS NOT INSTALLED =====> [x]")
 	os.system("sudo apt-get install zenity")
+apksigner=os.path.exists("/usr/bin/apksigner")
+if apksigner is True:
+	print("\033[1;32 ApkSigner is installed ====> [ok]")
+else:
+	print("\033[1;31 ApkSigner is not installed ====> [x]")
+	os.system("sudo apt-get install apksigner")
 print("\033[1;32m Installing Support libraries")
 os.system("sudo python3 -m pip install click")
 os.system("sudo apt-get install apache2")

